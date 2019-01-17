@@ -1,0 +1,31 @@
+.nav{
+	&__container{
+		border-bottom: 1px solid #EAEFF5;
+	}
+	&--white{
+		.menu{
+			&__item.font{
+				color: #fff;
+				&:last-child{
+					background-image: url('../img/menu-last-white-bg.png');
+				}
+			}
+		}
+		.logo{
+			background-image: url('../img/logo-white-bg.png');
+		}
+	}
+	&--black{
+		.menu{
+			&__item.font{
+				color: $third;
+				&:last-child{
+					background-image: url('../img/menu-last-black-bg.png');
+				}
+			}
+		}
+		.logo{
+			background-image: url('../img/logo-black-bg.png');
+		}
+	}
+}

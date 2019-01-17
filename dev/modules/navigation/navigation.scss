@@ -1,0 +1,25 @@
+.navigation{
+	padding: 10px 0;
+	&__item{
+		padding: 0 5px;
+		font-size: 14px;
+		&:hover,
+		&--active{
+			&:not(.point){
+				color: $fifth;
+			}
+		}
+		&.arrow{
+			font-size: 18px;
+		}
+		&.point{
+			letter-spacing: 2px;
+		}
+		&.next{
+			margin-left: 10px;
+		}
+		&.prev{
+			margin-right: 10px;
+		}
+	}
+}

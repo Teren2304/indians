@@ -1,0 +1,5 @@
+mixin rooms(item)
+	.rooms&attributes(attributes)
+		.rooms__img.background(style="background-image: url(" + item.img + ")")
+		.rooms__title
+			p.font.text-center.text-uppercase= item.name

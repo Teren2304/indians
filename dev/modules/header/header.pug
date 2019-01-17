@@ -1,0 +1,8 @@
+mixin header(modifier)
+	.header&attributes(attributes)
+		+nav.nav--white
+		.container
+			.flex-container.align-middle.align-justify.flex-wrap
+				-var rooms = [{name: "citrus",img: "../img/index-room-1-bg.png"},{name: "pine",img: "./img/index-room-1-bg.png"},{name: "perl",img: "./img/index-room-1-bg.png"},{name: "aqua",img: "./img/index-room-1-bg.png"},{name: "silver",img: "./img/index-room-1-bg.png"}];
+				each item in rooms
+					+rooms(item)

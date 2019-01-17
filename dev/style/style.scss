@@ -1,0 +1,33 @@
+/* Plugins */
+@import './dev/plugins/slick/slick.min';
+
+/* Base */
+@import './dev/style/mixin';
+@import './dev/style/base/variables';
+@import './dev/style/base/fonts';
+@import './dev/style/base/reset';
+@import './dev/style/base/grid';
+@import './dev/style/base/base';
+@import './dev/style/base/helper';
+@import './dev/style/base/keyframes';
+
+/* Typography */
+@import './dev/style/typography/font';
+@import './dev/style/typography/title';
+
+/* Rewrite plugins style */
+@import './dev/style/base/plugins';
+
+/* Modules */
+@import './dev/modules/header/header';
+@import './dev/modules/footer/footer';
+@import './dev/modules/button/button';
+@import './dev/modules/input/input';
+@import './dev/modules/nav/nav';
+@import './dev/modules/logo/logo';
+@import './dev/modules/menu/menu';
+
+@import './dev/modules/rooms/rooms';
+@import './dev/modules/article/article';
+@import './dev/modules/navigation/navigation';
+@import './dev/modules/breadcrumbs/breadcrumbs';

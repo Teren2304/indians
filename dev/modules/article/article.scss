@@ -1,0 +1,49 @@
+.article{
+	border: 1px solid red;
+	&--grey{
+		.article__img .date{
+			background: rgb(96,112,116);
+			background: linear-gradient(77deg, rgb(96,112,116) 5%, rgb(146,151,143) 51%);
+		}
+	}
+	&--olive{
+		.article__img .date{
+			background: rgb(103,114,55);
+			background: linear-gradient(77deg, rgb(103,114,55) 5%, rgb(103,114,55) 51%);
+		}
+	}
+	&--brown{
+		.article__img .date{
+			background: rgb(97,88,73);
+			background: linear-gradient(77deg, rgb(97,88,73) 5%, rgb(119,109,99) 51%);
+		}
+	}
+
+	&__img{
+		display: block;
+		border: 1px solid red;
+		position: relative;
+		height: 230px;
+		border-radius: 5px;
+		overflow: hidden;
+		.date{
+			position: absolute;
+			left: 15px;
+			bottom: 15px;
+			width: 90px;
+			height: 30px;
+			border-radius: 5px;
+			overflow: hidden;
+			line-height: 3;
+			color: #fff;
+		}
+	}
+	&__title{
+		display: block;
+		margin: 15px 0 10px 0;
+		&:hover,
+		&--active{
+			color: $fifth;
+		}
+	}
+}

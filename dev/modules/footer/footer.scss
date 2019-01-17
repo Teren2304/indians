@@ -1,0 +1,27 @@
+.footer{
+	padding: 50px 0;
+	background-color: $third;
+	.line{
+		margin-top: 10px;
+		margin-left: 0;
+		margin-right: auto;
+		width: 55%;
+	}
+
+	.submenu{
+		&__item{
+			a{
+		  		min-width: 50%;
+		  		padding: 5px 0;
+		  		display: inline-block;
+		  		&:hover{
+		  			color: #fff;
+		  		}
+			}
+		}
+	}
+
+	.copyright{
+		margin-top: 50px;
+	}
+}

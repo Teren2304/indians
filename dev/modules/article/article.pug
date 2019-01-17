@@ -1,0 +1,6 @@
+mixin article(item)
+	.article&attributes(attributes)(class=item.class)
+		a.article__img.background(style="background-image: url("+item.img+")", href="#")
+			p.font.sm.text-center.date= item.date
+		a.article__title(href="#")= item.title
+		p.font.second.article__text= item.text
