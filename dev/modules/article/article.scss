@@ -1,5 +1,5 @@
 .article{
-	border: 1px solid red;
+	margin-bottom: 40px;
 	&--grey{
 		.article__img .date{
 			background: rgb(96,112,116);
@@ -20,20 +20,14 @@
 	}
 
 	&__img{
-		display: block;
-		border: 1px solid red;
 		position: relative;
 		height: 230px;
-		border-radius: 5px;
-		overflow: hidden;
 		.date{
 			position: absolute;
 			left: 15px;
 			bottom: 15px;
 			width: 90px;
 			height: 30px;
-			border-radius: 5px;
-			overflow: hidden;
 			line-height: 3;
 			color: #fff;
 		}

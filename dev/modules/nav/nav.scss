@@ -1,6 +1,26 @@
 .nav{
-	&__container{
-		border-bottom: 1px solid #EAEFF5;
+	background-color: rgba(0,0,0,0);
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 9;
+	&--fixed{
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+		&.nav--black{
+			background-color: rgba(255,255,255,0.9);
+		}
+		&.nav--white{
+			background-color: rgba(0,0,0,0.7);
+		}
+		.nav__container{
+			border: 0;
+		}
+	}
+	&--default{
+		.nav__container{
+			border-bottom: 1px solid #EAEFF5;
+		}
 	}
 	&--white{
 		.menu{
