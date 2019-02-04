@@ -1,8 +1,0 @@
-mixin menu(modifier)
-	.flex-container.align-middle
-		menu.menu.flex-container.align-middle&attributes(attributes)
-			- var menu = [{href: "/rooms.html",name: "Rooms"},{href: "/offers.html",name: "Offers"},{href: "/blog.html",name: "Blog"},{href: "/about.html",name: "About us"},{href: "/contact.html",name: "Contact"}, {name: "Login"}];
-			each item in menu
-				a.font.menu__item(href= item.href)= item.name
-
-		button.button.second.menu__button Book Now

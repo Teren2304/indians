@@ -1,9 +1,0 @@
-mixin room(item)
-	a.room.cut.background&attributes(attributes)
-		each data in item
-			.flex-container.align-baseline.align-justify.room__description
-				p.font.lg= data.name
-				.flex-container.align-middle
-					p.font= data.guests + ' Guests'
-					p.font= data.bad + ' Bad'
-					p.font= data.sq + ' Sq'

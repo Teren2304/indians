@@ -1,3 +1,18 @@
+@mixin scroll($width, $track-color, $track-border, $thumb-color, $thumb-border){
+	&::-webkit-scrollbar{
+		width: $width;
+	}
+	&::-webkit-scrollbar-thumb{
+		border: 1px solid $thumb-border;
+		background-clip: content-box;
+		background-color: $thumb-color;
+	}
+	&::-webkit-scrollbar-track{
+		border: $track-border;
+		background-color: $track-color;
+	}
+}
+
 @mixin placeholder($color){
 	&::-webkit-input-placeholder{
 		color: $color;
@@ -10,6 +25,14 @@
 	}
 }
 
+@mixin absolute{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
 @mixin absolute-center{
 	position: absolute;
 	left: 50%;
@@ -17,28 +40,28 @@
 	transform: translate(-50%, -50%);
 }
 
-@mixin absolute-left($left){
+@mixin absolute-center-left($left){
 	position: absolute;
 	left: $left;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-@mixin absolute-right($right){
+@mixin absolute-center-right($right){
 	position: absolute;
 	right: $right;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-@mixin absolute-top($top){
+@mixin absolute-center-top($top){
 	position: absolute;
 	right: 50%;
 	top: $top;
 	transform: translateX(-50%);
 }
 
-@mixin absolute-bottom($bottom){
+@mixin absolute-center-bottom($bottom){
 	position: absolute;
 	right: 50%;
 	bottom: $bottom;
@@ -56,9 +79,6 @@
 		left: 0;
 		z-index: 1;
 		background-color: $color;
-	}
-	*{
-		position: relative;
 	}
 }
 

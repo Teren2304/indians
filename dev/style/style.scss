@@ -1,5 +1,4 @@
 /* Plugins */
-@import './dev/plugins/slick/slick.min';
 
 /* Base */
 @import './dev/style/mixin';
@@ -15,23 +14,31 @@
 @import './dev/style/typography/font';
 @import './dev/style/typography/title';
 
+
+/* Base modules */
+@import './dev/modules/base/button/button';
+@import './dev/modules/base/field/field';
+@import './dev/modules/base/textarea/textarea';
+
+@import './dev/modules/base/radio/radio';
+@import './dev/modules/base/checkbox/checkbox';
+
+/* Parts modules */
+@import './dev/modules/parts/nav/nav';
+@import './dev/modules/parts/logo/logo';
+@import './dev/modules/parts/menu/menu';
+@import './dev/modules/parts/breadcrumbs/breadcrumbs';
+@import './dev/modules/parts/show-menu/show-menu';
+@import './dev/modules/parts/article/article';
+
+@import './dev/modules/parts/shadow/shadow';
+@import './dev/modules/parts/popup/popup';
+@import './dev/modules/parts/close/close';
+
+
+/* Layout modules */
+@import './dev/modules/layout/header/header';
+@import './dev/modules/layout/footer/footer';
+
 /* Rewrite plugins style */
-@import './dev/style/base/plugins';
-
-/* Modules */
-@import './dev/modules/header/header';
-@import './dev/modules/footer/footer';
-@import './dev/modules/button/button';
-@import './dev/modules/input/input';
-@import './dev/modules/nav/nav';
-@import './dev/modules/logo/logo';
-@import './dev/modules/menu/menu';
-
-@import './dev/modules/room/room';
-@import './dev/modules/rooms/rooms';
-@import './dev/modules/room-single/room-single';
-@import './dev/modules/offers/offers';
-@import './dev/modules/slider/slider';
-@import './dev/modules/article/article';
-@import './dev/modules/navigation/navigation';
-@import './dev/modules/breadcrumbs/breadcrumbs';
+//@import './dev/style/base/plugins';

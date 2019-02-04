@@ -1,0 +1,14 @@
+.article{
+	width: 100%;
+	&__header{
+		.img{
+			height: 300px;
+		}
+	}
+	&__body{
+		padding: 10px 0;
+	}
+	&__footer{
+		padding: 10px 0;
+	}
+}

@@ -5,117 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Base</title>
+    <title>Index</title>
   </head>
   <body>
-      <div class="header background" style="background-image: url('./img/header-bg.png');">
-          <nav class="nav nav--default nav--white">
-            <div class="container-fluid">
-              <div class="container nav__container">
-                <div class="flex-container align-middle align-justify"><a class="logo background" href="index.html"></a>
-                    <div class="flex-container align-middle">
-                      <menu class="menu flex-container align-middle"><a class="font menu__item" href="/rooms.html">Rooms</a><a class="font menu__item" href="/offers.html">Offers</a><a class="font menu__item" href="/blog.html">Blog</a><a class="font menu__item" href="/about.html">About us</a><a class="font menu__item" href="/contact.html">Contact</a><a class="font menu__item">Login</a>
-                      </menu>
-                      <button class="button second menu__button">Book Now</button>
-                    </div>
-                </div>
-              </div>
+      <header class="header">
+          <nav class="nav nav--default">
+            <div class="container flex-container align-middle align-justify"><a class="logo" href="/"></a>
+                <ul class="menu flex-container align-middle">
+                  <li class="menu__item"><a class="font link" href="">Item</a></li>
+                  <li class="menu__item"><a class="font link" href="/">Item 2</a></li>
+                  <li class="menu__item"><a class="font link" href="/">Item 3</a></li>
+                  <li class="menu__item"><a class="font link" href="/">Item 4</a></li>
+                  <li class="menu__item"><a class="font link" href="/">Item 5</a></li>
+                  <li class="menu__item"><a class="font link" href="/">Item 6</a></li>
+                  <li class="menu__item"><a class="font link popup__show" data="#popup1">Login</a></li>
+                </ul>
+                <div class="show-menu"><span class="show-menu__item"></span><span class="show-menu__item"></span><span class="show-menu__item"></span></div>
             </div>
           </nav>
-        <div class="container">
-          <div class="flex-container align-middle align-justify flex-wrap">
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(../img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">citrus</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">pine</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">perl</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">aqua</p>
-                </div>
-              </div>
-              <div class="rooms">
-                <div class="rooms__img cut background" style="background-image: url(./img/index-room-1-bg.png)"></div>
-                <div class="rooms__title cut">
-                  <p class="font text-center text-uppercase">silver</p>
-                </div>
-              </div>
+        <div class="container-fluid">
+          <div class="container">
+            <p>Header</p>
           </div>
         </div>
-      </div>
+      </header>
     <main class="main">
       <div class="container">
+          <div class="breadcrumbs flex-container align-middle"><a class="font breadcrumbs__item" href="/">Home</a>
+            <p class="font breadcrumbs__item">Blog</p>
+          </div>
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-4">
-            <p>1</p>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+              <article class="article">
+                <header class="article__header">
+                  <div class="img img--hover"><img src="./img/article/img/article-bg-1.jpg"></div>
+                  <h3>Article 1</h3>
+                </header>
+                <main class="article__body">
+                  <p class="font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.</p>
+                </main>
+                <footer class="article__footer">
+                  <p class="font">01.01.2018</p>
+                </footer>
+              </article>
           </div>
-          <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-4">
-            <p>2</p>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+              <article class="article">
+                <header class="article__header">
+                  <div class="img img--hover"><img src="./img/article/img/article-bg-1.jpg"></div>
+                  <h3>Article 2</h3>
+                </header>
+                <main class="article__body">
+                  <p class="font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.</p>
+                </main>
+                <footer class="article__footer">
+                  <p class="font">01.01.2018</p>
+                </footer>
+              </article>
           </div>
-          <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-4">
-            <p>3</p>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+              <article class="article">
+                <header class="article__header">
+                  <div class="img img--hover"><img src="./img/article/img/article-bg-1.jpg"></div>
+                  <h3>Article 3</h3>
+                </header>
+                <main class="article__body">
+                  <p class="font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.</p>
+                </main>
+                <footer class="article__footer">
+                  <p class="font">01.01.2018</p>
+                </footer>
+              </article>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
+              <article class="article">
+                <header class="article__header">
+                  <div class="img img--hover"><img src="./img/article/img/article-bg-1.jpg"></div>
+                  <h3>Article 4</h3>
+                </header>
+                <main class="article__body">
+                  <p class="font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.</p>
+                </main>
+                <footer class="article__footer">
+                  <p class="font">01.01.2018</p>
+                </footer>
+              </article>
           </div>
         </div>
       </div>
     </main>
-      <div class="footer">
+      <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Navigation</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item"><a class="font fourth" href="#">Room</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">Offers</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">About Us</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Contact</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item"><a class="font fourth" href="#">Tel: +032 2 78 34 90</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">Mob: +995 598 89 23 45</a></li>
-                <li class="submenu__item"><a class="font fourth" href="#">Addres: Pekini Ave 12</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Rooms</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Citrus</a><a class="font fourth" href="#">Perl</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Pine</a><a class="font fourth" href="#">Aqua</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Silver</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-              <p class="font fourth">Fin Us on</p>
-              <hr class="line">
-              <ul class="submenu">
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Airbnb.com</a><a class="font fourth" href="#">Facebook</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Booking.com</a><a class="font fourth" href="#">Instagram</a></li>
-                <li class="submenu__item flex-container align-middle"><a class="font fourth" href="#">Trip Advisor</a></li>
-              </ul>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 copyright">
-              <p class="font fourth">© 2018 aparthotel.com All Rights Reserved</p>
-            </div>
-          </div>
+          <p>Footer</p>
         </div>
+      </footer>
+      <div class="shadow">
+          <div class="popup" id="popup1"><a class="close popup__close"></a>
+            <p>popup1</p>
+          </div>
       </div>
     <script src="./js/custom.js"></script>
   </body>

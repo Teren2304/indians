@@ -2,15 +2,12 @@ $font-color: (
 	'primary': $primary,
 	'second': $second,
 	'third': $third,
-	'fourth': $fourth,
-	'fifth': $fifth,
-	'sixth': $sixth
 );
 
 $font-size: (
-	'sm': 10px, 
+	'sm': 12px, 
 	'md': 16px, 
-	'lg': 20px
+	'lg': 18px
 );
 $font-weight: (
 	'light': 300, 
@@ -24,17 +21,17 @@ $font-weight: (
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;
 	@each $status, $text-color in $font-color{
-		&.#{$status}{
+		&--#{$status}{
 			color: $text-color;
 		}
 	}
 	@each $status, $text-weight in $font-weight{
-		&.#{$status}{
+		&--#{$status}{
 			font-weight: $text-weight;
 		}
 	}
 	@each $status, $text-size in $font-size{
-		&.#{$status}{
+		&--#{$status}{
 			font-size: $text-size;
 		}
 	}

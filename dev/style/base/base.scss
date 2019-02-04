@@ -8,30 +8,30 @@
 		left: auto;
 	}
 }
-.main{
-	padding: 80px 0 30px 0;
-	&__nav{
-		margin: 0 0 25px;
-	}
-}
-.container-fluid{
-	&--primary{
-		background-color: $primary;
-	}
-}
+
 .container {
+	padding: 0 15px;
 	min-width: $min-width;
 	max-width: $max-width;
 }
-.line{
-	border: 0;
-	height: 1px;
-	background-color: #383838;
-}
 
-.cut{
-	display: block;
+.img{
 	overflow: hidden;
-	border-radius: 5px;
-	border: 1px solid red;
+	&--hover{
+		&:hover{
+			img{
+				transform: scale(1.2);
+			}
+		}
+	}
+	img{
+		transition: all .5s;
+		width: auto;
+		height: auto;
+		max-height: 100%;
+		min-width: 100%;
+		max-width: none;
+		object-fit: cover;
+		object-position: center;
+	}
 }

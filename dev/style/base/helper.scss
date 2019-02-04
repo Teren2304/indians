@@ -17,6 +17,9 @@
 	&-wrap{
 		flex-wrap: wrap;
 	}
+	&-no-wrap{
+		flex-wrap: nowrap;
+	}
 }
 .align{
 	&-left{
@@ -67,6 +70,7 @@
 	}
 }
 .text{
+	margin: 10px 0;
 	&-left{
 		text-align: left;
 	}
@@ -93,6 +97,14 @@
 	}
 	&-nowrap{
 		white-space: nowrap;
+	}
+	&-ellipsis{
+		max-width: 100%;
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-align: left;
+		text-overflow: ellipsis;
 	}
 }
 .overflow{
