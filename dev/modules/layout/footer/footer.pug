@@ -1,4 +1,30 @@
-mixin footer(item)
+mixin footer
 	footer.footer&attributes(attributes)
-		if block
-			block
+		.container-fluid.footer__info
+			.container
+				.row.align-justify
+					.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4
+						+logo("#")
+						p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+						+social
+					.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-3
+						- var links = ["About Us", "Services", "Blog", "Contact"]
+						ul.links
+							li.links__item
+								h6.h6 Important Links
+							each item in links
+								li.links__item
+									a(href="#").font= item
+					.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-3
+						- var links = ["Privacy Policies", "Terms & Condition", "FAQ"]
+						ul.links
+							li.links__item
+								h6.h6 Others
+							each item in links
+								li.links__item
+									a(href="#").font= item
+
+		.container-fluid.footer__copyright
+			.container
+				.text-center
+					p.font © 2019 The Indians all rights reserved

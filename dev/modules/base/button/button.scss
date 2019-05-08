@@ -1,18 +1,25 @@
 .button{
 	border: 0;
-	height: 50px;
-	width: 100px;
+	height: 77px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #d4d4d4;
+	font-size: 24px;
+	font-family: $base-font-family;
+	color: #fff;
+	border-radius: 5px;
 	&--primary{
-
+		background-color: $primary;
+		&:hover{
+			background-color: darken($primary, 5%);
+		}
 	}
 	&--second{
-
-	}
-	&--third{
-		
+		background-color: $second;
+		color: $primary;
+		&:hover{
+			background-color: darken($second, 5%);
+		}
 	}
 }

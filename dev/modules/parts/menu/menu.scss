@@ -31,18 +31,18 @@ $menu:(
 		}
 	}
 	&__item{
-		margin: map-get($menu, item-margin);
+		margin: 0 20px;
 		&:first-child{
 			margin-left: 0;
 		}
 		&:last-child{
 			margin-right: 0;
+			margin-left: 40px;
 		}
 		@include media-max(767){
 			margin: 0;
 		}
 		.link{
-			padding: map-get($menu, item-padding);
 			display: block;
 			position: relative;
 			&:before{
@@ -54,13 +54,20 @@ $menu:(
 				width: 0;
 				height: 2px;
 				transition: all .5s;
+				background-color: $primary;
 			}
 			&:hover,
 			&--active{
+				color: $primary;
 				&:before{
 					width: 100%;
 				}
 			}
+		}
+		.button{
+			width: 123px;
+			height: 49px;
+			font-size: 16px;
 		}
 	}
 }

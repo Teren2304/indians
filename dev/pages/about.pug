@@ -1,0 +1,52 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h2.h1 About Us
+							p.h6 Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
+		.main
+			section.section.section--right
+				.container-fluid
+					.container
+						.row.align-middle.align-justify
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								.text-left
+									.points.points--left
+									h2.h1 Our Mission
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4.points.points--left
+								img(src="./img/right.png", alt="")
+			section.section.section--left
+				.container-fluid
+					.container
+						.row.align-middle.align-justify
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4
+								img(src="./img/right.png", alt="")
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								.text-left
+									.points.points--right
+									h2.h1 Our Vision
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+			section.section.section--feedback
+				.container-fluid
+					.container
+						.row
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								h3.h3.h3--white Do you have any Query?
+								p.font.font--lg.font--white Write us your queries, we’ll respond 	you asap!
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								.form.flex.align-middle
+									input(type="email", placeholder="Email Address").field.form__field
+									button.button.form__button Contact
+		+footer

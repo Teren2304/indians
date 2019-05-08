@@ -1,4 +1,5 @@
 /* Plugins */
+@import './dev/plugins/slick/slick.min';
 
 /* Base */
 @import './dev/style/mixin';
@@ -30,6 +31,9 @@
 @import './dev/modules/parts/breadcrumbs/breadcrumbs';
 @import './dev/modules/parts/show-menu/show-menu';
 @import './dev/modules/parts/article/article';
+@import './dev/modules/parts/social/social';
+@import './dev/modules/parts/slider/slider';
+
 
 @import './dev/modules/parts/shadow/shadow';
 @import './dev/modules/parts/popup/popup';

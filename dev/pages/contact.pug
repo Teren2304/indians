@@ -1,0 +1,48 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h2.h1 Contact Us
+							p.h6 Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
+		.main
+			section.section.section--contact
+				.container-fluid
+					.container
+						.contact.flex.align-justify
+							.contact__left
+								.text-left
+									h5.h5 Our Office
+									p.font.font--sm 3 Homer Street, Marylebone, London W1H 4NP London
+								.text-left
+									h5.h5 Call Us
+									p.font
+										span.font--primary Mobile:  
+										span +91 - 058653462
+									p.font
+										span.font--primary Phone:  
+										span 96 - 058653462
+								.text-left
+									h5.h5 Email Us
+									a.font.font--primary(mail:to="contact@theindians.com") contact@theindians.com
+							.contact__right
+								h5.h5 Send Message
+								.form
+									ul
+										li
+											+field('text', 'Full Name', 'name', true)
+										li
+											+field('email', 'Email Address', 'email', true)
+										li
+											+textarea('Type Message…', 'message…', true)
+										li
+											+button('button').button--primary Send
+		+footer

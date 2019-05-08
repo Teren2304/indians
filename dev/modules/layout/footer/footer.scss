@@ -1,4 +1,30 @@
 .footer{
-	border: 1px solid red;
-	height: 300px;
+	overflow: hidden;
+	&__info{
+		padding: 75px 0 50px 0;
+		.logo{
+			margin-bottom: 20px;
+		}
+		.social{
+			margin-top: 80px;
+		}
+		.links{
+			&__item{
+				&:first-child{
+					margin-top: 20px;
+					margin-bottom: 15px;
+				}
+				a{
+					&:hover,
+					&.active{
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+	&__copyright{
+		padding: 25px 0 20px 0;
+		border-top: 1px solid #E8E8E8;
+	}
 }

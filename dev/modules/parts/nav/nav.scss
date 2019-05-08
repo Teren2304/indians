@@ -1,38 +1,26 @@
 $nav:(
-	background-color-fixed: rgba(0,0,0,0.7),
+	background-color-fixed: rgba(0,0,0,0.5),
 	background-color-default: rgba(0,0,0,0.05),
-	height: 90px,
+	height: 115px,
 	z-index: 9
 );
 
 .nav{
+	border: 1px solid red;
 	width: 100%;
 	height: map-get($nav, height);
 	z-index: map-get($nav, z-index);
 	transition: all 0.5s ease-out 0s;
-	[class*="container"]{
+	[class*="container"],
+	.flex{
 		&:not(.menu){
 			height: inherit;
 		}
 	}
 	&--default{
 		position: relative;
-		background-color: map-get($nav, background-color-default);
 		@include media-max(767){
 			background-color: map-get($nav, background-color-default);
-		}
-		.menu{
-			@include media-max(767){
-				background-color: map-get($nav, background-color-default);
-			}
-			&__item{
-				.link{
-					color: $primary;
-					&:before{
-						background-color: $primary;
-					}
-				}
-			}
 		}
 		.show-menu{
 			&__item{

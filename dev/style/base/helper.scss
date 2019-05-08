@@ -1,17 +1,15 @@
 .flex{
-	&-container{
-		display: flex;
+	display: flex;
+	&-row{
+		flex-direction: row;
 	}
-	&-dir-row{
-		flex-wrap: wrap;
-	}
-	&-dir-row-reverse{
+	&-row-reverse{
 		flex-direction: row-reverse;
 	}
-	&-dir-column{
+	&-column{
 		flex-direction: column;
 	}
-	&-dir-column-reverse{
+	&-column-reverse{
 		flex-direction: column-reverse;
 	}
 	&-wrap{
@@ -70,7 +68,6 @@
 	}
 }
 .text{
-	margin: 10px 0;
 	&-left{
 		text-align: left;
 	}

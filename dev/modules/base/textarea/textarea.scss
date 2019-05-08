@@ -1,17 +1,3 @@
 .textarea{
-	width: 100%;
-	height: 150px;
-	padding: 10px;
-	resize: none;
-	border: 1px solid $base-border-color;
-	@include placeholder(#666);
-	&--primary{
-
-	}
-	&--second{
-
-	}
-	&--third{
-		
-	}
+	height: 90px;
 }

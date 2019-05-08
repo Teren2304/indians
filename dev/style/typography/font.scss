@@ -2,21 +2,20 @@ $font-color: (
 	'primary': $primary,
 	'second': $second,
 	'third': $third,
+	'white': #fff
 );
 
 $font-size: (
-	'sm': 12px, 
-	'md': 16px, 
-	'lg': 18px
+	'sm': 16px,
+	'md': 20px,
+	'lg': 24px
 );
 $font-weight: (
-	'light': 300, 
-	'regular': 400,
-	'semibold': 500
+	'medium': 500
 );
 .font{
 	color: $base-font-color;
-	line-height: $base-font-line-height;
+	line-height: 40px;
 	font-size: $base-font-size;
 	font-family: $base-font-family;
 	font-weight: $base-font-weight;

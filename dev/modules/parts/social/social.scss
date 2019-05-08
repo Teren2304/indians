@@ -1,0 +1,21 @@
+.social{
+	&__item{
+		height: 20px;
+		width: 20px;
+		font-size: 20px;
+		position: relative;
+		margin-right: 20px;
+		&:last-child{
+			margin-right: 0;
+		}
+		a{
+			&:before{
+				@include absolute-center;
+			}
+			&:hover,
+			&.active{
+				color: $primary;
+			}
+		}
+	}
+}

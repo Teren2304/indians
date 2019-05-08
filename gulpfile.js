@@ -16,8 +16,8 @@ var paths = {
         build: './build'
     },
     html: {
-        src: './dev/pages/*.pug',
-        dest: './build',
+        src: './dev/pages/**/*.pug',
+        dest: './build/',
         watch: ['./dev/pages/*.pug', './dev/templates/*.pug', './dev/modules/**/*.pug']
     },
     css: {
@@ -31,14 +31,14 @@ var paths = {
         watch: ['./dev/modules/**/*.js', './dev/plugins/**/*.js', './dev/js/**/*.js']
     },
     img: {
-        src: ['./dev/modules/parts/**/img/*', './dev/modules/base/**/img/*', './dev/modules/layout/**/img/*', './dev/img/*'],
+        src: ['./dev/modules/parts/**/img/*', './dev/modules/base/**/img/*', './dev/modules/layout/**/img/*', './dev/img/**/*', './dev/img/*'],
         dest: './build/img/',
-        watch: ['./dev/modules/**/img/**/*', './dev/img/*']
+        watch: ['./dev/modules/**/img/**/*', './dev/img/**/*', './dev/img/*']
     },
     fonts: {
-        src: './dev/fonts/*',
+        src: './dev/fonts/**/*',
         dest: './build/fonts',
-        watch: './dev/fonts/*'
+        watch: './dev/fonts/**/*'
     }
 };
 
@@ -80,7 +80,8 @@ gulp.task('img', function () {
         .pipe(plumber())
         //.pipe(imagemin())
         //.pipe(rename({ dirname: '' }))
-        .pipe(gulp.dest(paths.img.dest));
+        .pipe(gulp.dest(paths.img.dest))
+        .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('fonts', function () {

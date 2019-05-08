@@ -1,0 +1,119 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h2.h1 Register
+							p.h6 Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
+		.main
+			section.section.section--register
+				.container-fluid
+					.container
+						.row.step#step-1
+							.col-12.col-md-5.step__left.background(style="background-image: url(./img/register/bg.png)")
+							.col-12.col-md-7.step__right
+								h3.h3 Step 01
+								.form
+									ul
+										li
+											+field('text', 'Full Name', 'name', true)
+										li
+											+field('email', 'Email Address', 'email', true)
+										li
+											+field('text', 'Password', 'password', true)
+										li
+											+field('text', 'Confirm Password', 'c-password', true)
+										li.padding
+											+button('button').button--primary Next
+										li
+											.text-center
+												p.h6 Already have an Account? 
+													a(href="#").font--primary Log In
+
+						.row.step#step-2
+							.col-12.col-md-5.step__left.background(style="background-image: url(./img/register/bg.png)")
+							.col-12.col-md-7.step__right
+								h3.h3 Step 02
+								.form
+									ul
+										li
+											.background.avatar(style="background-image: url('./img/register/avatar.png')")
+										li.padding
+											+button('button').button--second Upload
+										li.padding
+											+button('button').button--primary Next
+										li
+											.text-center
+												p.h6 Already have an Account? 
+													a(href="#").font--primary Log In
+
+						.row.step#step-3
+							.col-12.col-md-5.step__left.background(style="background-image: url(./img/register/bg.png)")
+							.col-12.col-md-7.step__right
+								h3.h3 Step 03
+								.form
+									ul
+										li
+											+field('text', 'Date of Birth - DD/MM/YYYY', 'date', true)
+										li
+											+field('text', 'Address', 'address', true)
+										li
+											+field('text', 'ZIP Code', 'zip-code', true)
+										li
+											select.select
+												option Kiev
+												option Lviv
+												option Odessa
+										li.padding
+											+button('button').button--primary Next
+										li
+											.text-center
+												p.h6 Already have an Account? 
+													a(href="#").font--primary Log In
+						.row.step#step-4
+							.col-12.col-md-5.step__left.background(style="background-image: url(./img/register/bg.png)")
+							.col-12.col-md-7.step__right
+								h3.h3 Step 04
+								.form
+									ul
+										li(style="margin-top: 100px;")
+											+field('text', 'Enter Mobile Number', 'mobile', true)
+										li(style="margin-bottom: 100px;")
+											.flex.flex-wrap
+												+radio("text-message", "Text Message", "confirm-mobile")
+												+radio("voice-call", "Voice Call", "confirm-mobile")
+										li.padding
+											.text-center
+												p.font We’ll send you verification code to your phone
+												+button('button').button--primary Next
+										li
+											.text-center
+												p.h6 Already have an Account? 
+													a(href="#").font--primary Log In
+						.row.step#step-final
+							.col-12.col-md-5.step__left.background(style="background-image: url(./img/register/bg.png)")
+							.col-12.col-md-7.step__right
+								h3.h3 Final Step
+								.form
+									ul
+										li(style="margin: 100px 0;")
+											+field('text', 'Enter Verification Code', 'verify-code', true)
+											.text-center
+												a.font--md.font--primary.text-underline.link Resend Code
+										li.padding
+											.text-center
+												p.font We’ll send you verification code to your phone
+												+button('button').button--primary Next
+										li
+											.text-center
+												p.h6 Already have an Account? 
+													a(href="#").font--primary Log In
+		+footer

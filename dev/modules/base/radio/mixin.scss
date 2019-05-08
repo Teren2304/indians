@@ -1,16 +1,16 @@
 @mixin radio-custom{
 	$radio:(
 		padding: 5px,
-		height: 15px,
-		width: 15px,
-		color: #fff,
+		height: 22px,
+		width: 22px,
+		color: $primary,
 		border-radius: 100%,
-		background-color: #000
+		background-color: #fff
 	);
 	display: none;
 	& + label{
 		position: relative;
-		padding-left: map-get($radio, width) + 5px;
+		padding-left: map-get($radio, width) + 10px;
 		&:before,
 		&:after{
 			content: "";
@@ -20,6 +20,7 @@
 			}	
 		}
 		&:before{
+			border: 2px solid #000;
 			width: map-get($radio, width);
 			height: map-get($radio, height);
 			@include absolute-center-left(0);
@@ -27,13 +28,16 @@
 			background-color: map-get($radio, background-color);
 		}
 		&:after{
-			width: map-get($radio, width) - map-get($radio, padding);
-			height: map-get($radio, height) - map-get($radio, padding);
-			@include absolute-center-left(0 + map-get($radio, padding) / 2);
+			width: 11px;
+			height: 11px;
+			@include absolute-center-left(5px);
 			z-index: 1;
 		}
 	}
 	&:checked + label:after {
 		background-color: map-get($radio, color);
+	}
+	&:checked + label:before {
+		border-color: $primary
 	}
 }

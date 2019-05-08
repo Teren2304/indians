@@ -1,39 +1,78 @@
 extends ../template/template.pug
-block content	
-	+header
-		+nav.nav--default
-			.container.flex-container.align-middle.align-justify
-				+logo('/')
-				+menu
-				+show-menu
-
-		.container-fluid
-			.container
-				p Header
-
-	main.main
-		.container
-			-var breadcrumbs = [{link: "/", name: "Home"}, {name: "Blog"}];
-			+breadcrumbs(breadcrumbs)
-			.row
-				.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-3
-					-var article = [{title: "Article 1", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.", date: "01.01.2018", img: "article/img/article-bg-1.jpg"}];
-					+article(article)
-				.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-3
-					-var article = [{title: "Article 2", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.", date: "01.01.2018", img: "article/img/article-bg-1.jpg"}];
-					+article(article)
-				.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-3
-					-var article = [{title: "Article 3", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.", date: "01.01.2018", img: "article/img/article-bg-1.jpg"}];
-					+article(article)
-				.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-3
-					-var article = [{title: "Article 4", text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ipsa neque aliquam, repudiandae rerum voluptate facilis hic suscipit quis, fugit ducimus blanditiis, adipisci quisquam sapiente tempora modi odit, illo possimus.", date: "01.01.2018", img: "article/img/article-bg-1.jpg"}];
-					+article(article)
-
-	+footer
-		.container
-			p Footer
-
-	+shadow
-		+popup(id="popup1")
-			+close.popup__close
-			p popup1
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		.header
+			+nav
+			section.section.section--right
+				.container-fluid
+					.container
+						.row.align-middle.align-justify
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								.text-left
+									h2.h1 Have a Happy & Secured Life
+									p.font Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
+									.points.points--left
+									+button('link')(href="#").button--primary Get Started
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4
+								img(src="./img/right.png", alt="")
+		.main
+			section.section.section--steps
+				.container-fluid
+					.container
+						.row
+							.col-12
+								.text-center.section__description
+									h2.h1 3 Easy Steps
+									p.font Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
+							.col-12.col-sm-12.col-md-4.padding
+								.text-center.steps
+									img(src="./img/steps/1.svg", alt="")
+									h6.h6 Register
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+							.col-12.col-sm-12.col-md-4.padding
+								.text-center.steps.active
+									img(src="./img/steps/2.svg", alt="")
+									h6.h6 Submit Document
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+							.col-12.col-sm-12.col-md-4.padding
+								.text-center.steps
+									img(src="./img/steps/3.svg", alt="")
+									h6.h6 Tension Free Life
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+			section.section.section--left.section--about
+				.container-fluid
+					.container
+						.row.align-center-middle
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4
+								img(src="./img/left.png", alt="")
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-7
+								.points.points--right
+								.text-left
+									h2.h1 About Us
+									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+									+button('link')(href="#").button--second Learn More
+			section.section.section--slider
+				.container-fluid
+					.container
+						.points.points--right
+						.text-center.section__description
+							h2.h1 Testimonials
+							p.font Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
+						img(src="./img/service/quote.svg", alt="")
+						+slider
+			section.section.section--feedback
+				.container-fluid
+					.container
+						.row
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								h3.h3.h3--white Do you have any Query?
+								p.font.font--lg.font--white Write us your queries, we’ll respond you asap!
+							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+								.form.flex.align-middle
+									input(type="email", placeholder="Email Address").field.form__field
+									button.button.form__button Contact
+		+footer

@@ -1,4 +1,7 @@
-mixin nav(link)
-	nav.nav&attributes(attributes)
-		if block
-			block
+mixin nav
+	nav.nav.nav--default&attributes(attributes)
+		.container-fluid
+			.container
+				.flex.align-middle.align-justify
+					+logo
+					+menu
