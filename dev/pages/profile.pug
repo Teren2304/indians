@@ -1,0 +1,53 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		header.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h1.h1 Profile
+		.main
+			section.section.section--profile
+				.container-fluid
+					.container
+						.profile
+							.row
+								.col-12.col-md-4.profile__left
+									.text-center
+										.background.avatar(style="background-image: url('./img/register/avatar.png')")
+										h5.h5 Lara Lotus
+										p.font.font--sm Basic User
+										+button('link')(href="password.html").button--second Upgrade
+								.col-12.col-md-4.profile__center
+									ul
+										li
+											p.font Name
+											+field('text', 'Name', 'name', true)(value="Lara Lotus")
+										li
+											p.font Date of Birth
+											+field('text', 'Date of Birth', 'birthday', true)(value="25th July, 1989")
+										li
+											p.font ZIP Code
+											+field('text', 'ZIP Code', 'zip-code', true)(value="1432")
+										li
+											+button('link')(href="password.html").button--second Change Password
+								.col-12.col-md-4.profile__right
+									ul
+										li
+											p.font Email Address
+											+field('email', 'Email Address', 'email', true)(value="sheelgupta@theindians.com")
+										li
+											p.font Address
+											+field('text', 'Address', 'address', true)(value="House 09, Akota R/A, Andheri")
+										li
+											p.font State
+											+field('text', 'State', 'state', true)(value="Mumbai")
+										li
+											+button('link')(href="password.html").button--primary Update
+		+footer
