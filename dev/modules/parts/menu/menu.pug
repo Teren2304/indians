@@ -1,10 +1,8 @@
 mixin menu
-	- var menu = [{name: "Home", link:""},{name: "About Us", link:"/"},{name: "Pricing", link:"/"},{name: "Contact", link:"/"}];
+	- var menu = [{name: "Home", link:"/"},{name: "About Us", link:"about.html"},{name: "Pricing", link:"/"},{name: "Contact", link:"contact.html"}];
 	ul.menu.flex.align-middle&attributes(attributes)
 		each item in menu
 			li.menu__item
 				a.font.link(href=item.link)= item.name
 		li.menu__item
-			a.font.link.popup__show(data="#popup1") Login
-		li.menu__item
-			+button('link').button--primary Sign In
+			+button('link')(href="register.html").button--primary Sign In
