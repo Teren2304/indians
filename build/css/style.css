@@ -1083,6 +1083,18 @@ hr {
                   -webkit-transform: translate(-50%, -15px);
                       -ms-transform: translate(-50%, -15px);
                           transform: translate(-50%, -15px); } }
+    .section--dashboard .dashboard--details {
+      margin: 0 auto;
+      max-width: 780px;
+      padding: 55px; }
+      .section--dashboard .dashboard--details ul {
+        margin-top: 20px; }
+        .section--dashboard .dashboard--details ul li {
+          margin-bottom: 50px; }
+      .section--dashboard .dashboard--details p {
+        margin-bottom: 20px; }
+      .section--dashboard .dashboard--details .button {
+        margin-top: 25px; }
   .section--profile .profile {
     padding: 50px;
     -webkit-border-radius: 10px;
@@ -1093,13 +1105,40 @@ hr {
     .section--profile .profile__left .text-center {
       max-width: 190px; }
     .section--profile .profile__left .avatar {
-      margin-bottom: 60px;
       height: 190px;
       width: 190px; }
     .section--profile .profile__left .button {
       height: 46px;
       max-width: 170px;
       margin: 0 auto; }
+    .section--profile .profile__left .upload {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1; }
+    .section--profile .profile__left .upload + label {
+      height: 56px;
+      width: 56px;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      background-color: #fff;
+      -webkit-background-size: 18px 18px;
+              background-size: 18px 18px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-image: url("../img/service/upload.svg");
+      display: block;
+      margin: 0 auto;
+      -webkit-transform: translateY(-80%);
+          -ms-transform: translateY(-80%);
+              transform: translateY(-80%);
+      -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+              box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1); }
+    .section--profile .profile__left .upload:focus + label,
+    .section--profile .profile__left .upload + label:hover {
+      background-color: #e4e4e4; }
     .section--profile .profile__center ul li, .section--profile .profile__right ul li {
       margin-bottom: 50px; }
       .section--profile .profile__center ul li:last-child, .section--profile .profile__right ul li:last-child {
@@ -1109,6 +1148,22 @@ hr {
         line-height: 1.5; }
       .section--profile .profile__center ul li .field, .section--profile .profile__right ul li .field {
         padding-left: 5px; }
+  .section--password .password {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1); }
+    .section--password .password ul li {
+      margin-bottom: 50px; }
+      .section--password .password ul li:last-child {
+        margin-bottom: 0; }
+      .section--password .password ul li p {
+        font-size: 14px;
+        line-height: 1.5; }
 
 .flex {
   display: -webkit-box;

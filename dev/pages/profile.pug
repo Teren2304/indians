@@ -21,6 +21,9 @@ block content
 								.col-12.col-md-4.profile__left
 									.text-center
 										.background.avatar(style="background-image: url('./img/register/avatar.png')")
+										input(type="file", name="file", id="file").upload
+										label(for="file")
+
 										h5.h5 Lara Lotus
 										p.font.font--sm Basic User
 										+button('link')(href="password.html").button--second Upgrade
