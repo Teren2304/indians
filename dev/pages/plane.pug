@@ -1,0 +1,57 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		header.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h1.h1 Our Pricing Plan
+		.main
+			section.section.section--plane
+				.container-fluid
+					.container
+						.plane__options.flex.align-middle
+							+button('link').active Yearly
+							+button('link') Monthly
+						.plane.flex.align-center-middle
+							.plane__small
+								img(src="./img/plane/small.png", alt="")
+								ul.text-center
+									li
+										h2.h2 Free
+									li
+										h4.h4.h4--primary $0.00
+											span.font month
+									li
+										p.h6 10 Files Upload
+									li
+										p.h6 1 GB Storage
+									li
+										p.h6 Lorem lpsum
+									li
+										p.h6 Lorem Ipsum
+								+button('link')(href="#").button--second Upgrage
+							.plane__big
+								img(src="./img/plane/big.png", alt="")
+								ul.text-center
+									li
+										h2.h2 Premium
+									li
+										h4.h4.h4--primary $5.99
+											span.font month
+									li
+										p.h6 Unlimited Files Upload
+									li
+										p.h6 Unlimited Storage
+									li
+										p.h6 Lorem lpsum
+									li
+										p.h6 Lorem Ipsum
+								+button('link')(href="#").button--primary Buy Now
+		+footer

@@ -5,3 +5,10 @@ mixin nav
 				.flex.align-middle.align-justify
 					+logo("/")
 					+menu
+					.submenu
+						.flex.align-middle.submenu__wrapper
+							img(src="./img/icon.png", alt="")
+							i.fas.fa-caret-down
+						.submenu__dropdown
+							a(href="#").font Profile
+							a(href="#").font Logout

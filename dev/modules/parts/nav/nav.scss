@@ -56,4 +56,44 @@ $nav:(
 			}
 		}
 	}
+	.submenu{
+		position: relative;
+		&__wrapper{
+			cursor: pointer;
+			i{
+				margin-left: 20px;
+				font-size: 26px;
+			}
+			img{
+				width: 65px;
+				height: 65px;
+				border-radius: 100%;
+				overflow: hidden;
+			}
+		}
+		&__dropdown{
+			position: absolute;
+			padding: 20px 30px;
+			border-radius: 10px;
+			background-color: #fff;
+			min-width: 200px;
+			right: 0;
+			top: 100%;
+			transform: translateY(20px);
+			box-shadow: $base-box-shadow;
+			&:after {
+				content: ''; 
+				position: absolute;
+				right: 30%;
+				top: 0;
+				transform: translateY(-100%);
+				border: 10px solid transparent;
+				border-bottom: 10px solid #fff;
+			}
+
+			a{
+				display: block;
+			}
+		}
+	}
 }

@@ -1,0 +1,62 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		header.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h1.h1 Dashboard
+		.main
+			section.section.section--dashboard
+				.container-fluid
+					.container
+						.dashboard.dashboard--not-empty.text-center
+							.flex.align-middle.align-justify.flex-wrap
+								h6.h6 Your Documents
+								+button('link').button--primary + Add Docoments
+							.table
+								.table__row.table__row--service
+									.table__cell
+										p.font Document Type
+									.table__cell
+										p.font Name
+									.table__cell
+										p.font Date Created
+									.table__cell
+										p.font Last Update
+									.table__cell
+								- var n = 0;
+								while n < 4
+									.table__row
+										.table__cell
+											p.font(data="Document Type")= n++ + 'Bank Account'
+										.table__cell
+											p.font(data="Name") Sheel Gupta
+										.table__cell
+											p.font(data="Date Created") 20th April
+										.table__cell
+											p.font(data="Last Update") 25th April
+										.table__cell
+											.edit
+											.details
+											.delete
+								.table__row
+									.table__cell
+										p.font(data="Document Type") Bank Account
+									.table__cell
+										p.font(data="Name") Sheel Gupta lorem  sdfs dfs fs df
+									.table__cell
+										p.font(data="Date Created") 20th April
+									.table__cell
+										p.font(data="Last Update") 25th April
+									.table__cell
+										.edit
+										.details
+										.delete
+		+footer

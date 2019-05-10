@@ -1,0 +1,66 @@
+extends ../template/template.pug
+block content
+	.page
+		.triangle1
+		.triangle2
+		.ellipse1
+		.ellipse2
+		header.header
+			+nav
+			section.section.section--header
+				.container-fluid
+					.container
+						.text-center.section__description
+							h1.h1 Dashboard
+		.main
+			section.section.section--dashboard
+				.container-fluid
+					.container
+						.dashboard.dashboard--empty.text-center
+							img(src="./img/dashboard/bg.png", alt="")
+							h3.h3 Your Dashboard is Empty
+							+button('link').button--primary + Add Docoments
+				
+
+		+footer
+		.shadow
+			.popup
+				.dashboard.dashboard--add
+					.row
+						+close
+						.col-12
+							.text-center
+								h5.h5 Add Documents
+						.col-12
+							select.select
+								option Bank Account
+								option 2
+								option 3
+						.col-12.col-md-6
+							+field('text', 'Account Holder Name*', 'account-name', true)
+						.col-12.col-md-6
+							+field('text', 'Bank Name*', 'branch-name', true)
+						.col-12.col-md-6
+							+field('text', 'Account Number*', 'account-number', true)
+						.col-12.col-md-6
+							+field('text', 'Branch Name*', 'branch-name', true)
+						.col-12.col-md-6
+							+field('text', 'City', 'city', true)
+						.col-12.col-md-6
+							+field('text', 'Location of Document', 'location', true)
+						.col-12
+							+field('text', 'Note', 'note', true)
+						.col-12
+							.flex.align-middle
+								h6.h6 Do you want to add Nominee?
+								.flex.flex-wrap
+									+radio("nominee-yes", "Yes", "nominee")
+									+radio("nominee-no", "No", "nominee")
+						.col-12.col-md-6
+							+field('text', 'Nominee Name*', 'name', true)
+						.col-12.col-md-6
+							+field('text', 'Nominee Name*', 'name', true)
+						.col-12.col-md-6.margin
+							+button('link').button--second Upload Docoments
+						.col-12.col-md-6.margin
+							+button('link').button--primary Save

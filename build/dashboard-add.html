@@ -39,52 +39,18 @@
           <div class="container-fluid">
             <div class="container">
               <div class="text-center section__description">
-                <h2 class="h1">Contact Us</h2>
-                <p class="h6">Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource</p>
+                <h1 class="h1">Dashboard</h1>
               </div>
             </div>
           </div>
         </section>
       </header>
       <div class="main">
-        <section class="section section--contact">
+        <section class="section section--dashboard">
           <div class="container-fluid">
             <div class="container">
-              <div class="contact flex align-justify">
-                <div class="contact__left">
-                  <div class="text-left">
-                    <h5 class="h5">Our Office</h5>
-                    <p class="font font--sm">3 Homer Street, Marylebone, London W1H 4NP London</p>
-                  </div>
-                  <div class="text-left">
-                    <h5 class="h5">Call Us</h5>
-                    <p class="font"><span class="font--primary">Mobile:  </span><span>+91 - 058653462</span></p>
-                    <p class="font"><span class="font--primary">Phone:  </span><span>96 - 058653462</span></p>
-                  </div>
-                  <div class="text-left">
-                    <h5 class="h5">Email Us</h5><a class="font font--primary" mail:to="contact@theindians.com">contact@theindians.com</a>
-                  </div>
-                </div>
-                <div class="contact__right">
-                  <h5 class="h5">Send Message</h5>
-                  <div class="form">
-                    <ul>
-                      <li>
-                          <input class="field" type="text" placeholder="Full Name" name="name" required>
-                      </li>
-                      <li>
-                          <input class="field" type="email" placeholder="Email Address" name="email" required>
-                      </li>
-                      <li>
-                          <textarea class="textarea" placeholder="Type Message…" name="message…" required></textarea>
-                      </li>
-                      <li>
-                          <button class="button button--primary">Send
-                          </button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <div class="dashboard dashboard--empty text-center"><img src="./img/dashboard/bg.png" alt="">
+                <h3 class="h3">Your Dashboard is Empty</h3><a class="button button--primary">+ Add Docoments</a>
               </div>
             </div>
           </div>
@@ -136,6 +102,68 @@
             </div>
           </div>
         </footer>
+      <div class="shadow">
+        <div class="popup">
+          <div class="dashboard dashboard--add">
+            <div class="row"><a class="close"></a>
+              <div class="col-12">
+                <div class="text-center">
+                  <h5 class="h5">Add Documents</h5>
+                </div>
+              </div>
+              <div class="col-12">
+                <select class="select">
+                  <option>Bank Account</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Account Holder Name*" name="account-name" required>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Bank Name*" name="branch-name" required>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Account Number*" name="account-number" required>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Branch Name*" name="branch-name" required>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="City" name="city" required>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Location of Document" name="location" required>
+              </div>
+              <div class="col-12">
+                  <input class="field" type="text" placeholder="Note" name="note" required>
+              </div>
+              <div class="col-12">
+                <div class="flex align-middle">
+                  <h6 class="h6">Do you want to add Nominee?</h6>
+                  <div class="flex flex-wrap">
+                      <input class="radio" type="radio" id="nominee-yes" name="nominee">
+                      <label class="font" for="nominee-yes">Yes</label>
+                      <input class="radio" type="radio" id="nominee-no" name="nominee">
+                      <label class="font" for="nominee-no">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Nominee Name*" name="name" required>
+              </div>
+              <div class="col-12 col-md-6">
+                  <input class="field" type="text" placeholder="Nominee Name*" name="name" required>
+              </div>
+              <div class="col-12 col-md-6 margin"><a class="button button--second">Upload Docoments</a>
+              </div>
+              <div class="col-12 col-md-6 margin"><a class="button button--primary">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./js/custom.js"></script>
   </body>
