@@ -6,7 +6,7 @@ block content
 		.ellipse1
 		.ellipse2
 		header.header
-			+nav
+			+nav.nav--login
 			section.section.section--header
 				.container-fluid
 					.container
@@ -16,11 +16,11 @@ block content
 			section.section.section--plane
 				.container-fluid
 					.container
-						.plane__options.flex.align-middle
+						.bg-font.plane__options.flex.align-middle
 							+button('link').active Yearly
 							+button('link') Monthly
 						.plane.flex.align-center-middle
-							.plane__small
+							.bg-font.plane__small
 								img(src="./img/plane/small.png", alt="")
 								ul.text-center
 									li
@@ -37,7 +37,7 @@ block content
 									li
 										p.h6 Lorem Ipsum
 								+button('link')(href="#").button--second Upgrage
-							.plane__big
+							.bg-font.plane__big
 								img(src="./img/plane/big.png", alt="")
 								ul.text-center
 									li

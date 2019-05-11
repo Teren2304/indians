@@ -7,6 +7,9 @@
 		}
 		.social{
 			margin-top: 80px;
+			@include media-max(768){
+				margin-top: 20px;
+			}
 		}
 		.links{
 			&__item{

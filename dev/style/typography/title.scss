@@ -37,5 +37,8 @@ $title-weight: (
 @each $index, $status in $title-size{
 	.h#{$index}{
 		font-size: $status;
+		@include media-max(768){
+			font-size: $status * 0.7;
+		}
 	}
 }

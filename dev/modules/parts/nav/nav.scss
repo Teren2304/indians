@@ -6,7 +6,6 @@ $nav:(
 );
 
 .nav{
-	border: 1px solid red;
 	width: 100%;
 	height: map-get($nav, height);
 	z-index: map-get($nav, z-index);
@@ -20,12 +19,7 @@ $nav:(
 	&--default{
 		position: relative;
 		@include media-max(767){
-			background-color: map-get($nav, background-color-default);
-		}
-		.show-menu{
-			&__item{
-				background-color: #000;
-			}
+			background-color: #fff;
 		}
 	}
 	&--fixed{
@@ -33,42 +27,51 @@ $nav:(
 		left: 0;
 		top: 0;
 		right: 0;
-		background-color: map-get($nav, background-color-fixed);
-		@include media-max(767){
-			background-color: map-get($nav, background-color-fixed);
+		background-color: #fff;
+		box-shadow: $base-box-shadow;
+	}
+	&--login{
+		.button{
+			display: none;
 		}
 		.menu{
-			@include media-max(767){
-				background-color: map-get($nav, background-color-fixed);
-			}
+			margin-left: auto;
+			margin-right: 40px;
 			&__item{
-				.link{
-					color: #fff;
-					&:before{
-						background-color: #fff;
-					}
+				&:last-child{
+					margin-left: 0;
 				}
 			}
 		}
-		.show-menu{
-			&__item{
-				background-color: #fff;
-			}
+		.submenu{
+			display: block!important;
 		}
 	}
 	.submenu{
+		display: none;
 		position: relative;
+		@include media-max(768){
+			margin-left: auto;
+			margin-right: 10px;
+		}
 		&__wrapper{
 			cursor: pointer;
 			i{
 				margin-left: 20px;
 				font-size: 26px;
+				@include media-max(768){
+					margin-left: 10px;
+				}
 			}
 			img{
 				width: 65px;
 				height: 65px;
 				border-radius: 100%;
 				overflow: hidden;
+				@include media-max(768){
+					width: 50px;
+					height: 50px;
+				}
 			}
 		}
 		&__dropdown{
@@ -89,8 +92,10 @@ $nav:(
 				transform: translateY(-100%);
 				border: 10px solid transparent;
 				border-bottom: 10px solid #fff;
+				@include media-max(768){
+					right: 20%;
+				}
 			}
-
 			a{
 				display: block;
 			}

@@ -14,27 +14,6 @@
 	max-width: $max-width;
 }
 
-.img{
-	overflow: hidden;
-	&--hover{
-		&:hover{
-			img{
-				transform: scale(1.2);
-			}
-		}
-	}
-	img{
-		transition: all .5s;
-		width: auto;
-		height: auto;
-		max-height: 100%;
-		min-width: 100%;
-		max-width: none;
-		object-fit: cover;
-		object-position: center;
-	}
-}
-
 .points{
 	border: 1px solid red;
 	position: relative;
@@ -135,9 +114,15 @@
 	border: 7px solid #FFDBC3;
 	margin: 0 auto;
 }
+.bg-font{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: $base-box-shadow;
+	overflow: hidden;
+}
 
 .section{
-	border: 1px solid red;
+	//border: 1px solid red;
 	&__description{
 		max-width: 750px;
 		margin: 0 auto 20px auto;
@@ -202,7 +187,7 @@
 			}
 			&.active{
 				border-radius: 10px;
-				box-shadow: 0 30px 99px rgba(0,0,0,0.1);
+				box-shadow: $base-box-shadow;
 			}
 		}
 	}
@@ -279,17 +264,12 @@
 			}
 			&__left,
 			&__right{
-				box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-				width: 100%;
-				overflow: hidden;
-				border-radius: 10px;
-				background-color: #fff;
 				padding: 80px 40px 60px 40px;
 				@include media-max(768){
 					max-width: 100%;
 					flex: 1 1 100%;
 					margin: 20px 0;
-					padding: 20px 10px;
+					padding: 20px 15px;
 				}
 				.text-left{
 					margin-bottom: 20px;
@@ -306,6 +286,7 @@
 						}
 						@include media-max(768){
 							padding: 0;
+							margin-bottom: 20px;
 						}
 					}
 				}
@@ -316,10 +297,6 @@
 		.step{
 			margin: 20px 0;
 			height: 765px;
-			border-radius: 10px;
-			overflow: hidden;
-			background-color: #fff;
-			box-shadow: 0 30px 100px rgba(0,0,0,0.1);
 			@include media-max(768){
 				height: auto;
 			}
@@ -353,6 +330,7 @@
 						}
 						@include media-max(768){
 							padding: 0;
+							margin-bottom: 20px;
 						}
 					}
 				}
@@ -362,12 +340,21 @@
 	&--profile{
 		.profile{
 			padding: 50px;
-			border-radius: 10px;
-			background-color: #fff;
-			box-shadow: $base-box-shadow;
+			@include media-max(768){
+				padding: 50px 15px;
+			}
+			.field{
+				font-size: 16px;
+			}
 			&__left{
+				@include media-max(768){
+					margin-bottom: 40px;
+				}
 				.text-center{
 					max-width: 190px;
+					@include media-max(768){
+						margin: 0 auto;
+					}
 				}
 				.avatar{
 					//margin-bottom: 60px;
@@ -406,11 +393,19 @@
 					background-color: #e4e4e4;
 				}
 			}
+			&__center{
+				@include media-max(768){
+					margin-bottom: 40px;
+				}
+			}
 			&__center,
 			&__right{
 				ul{
 					li{
 						margin-bottom: 50px;
+						@include media-max(768){
+							margin-bottom: 20px;
+						}
 						&:last-child{
 							margin-bottom: 0;
 						}
@@ -420,6 +415,9 @@
 						}
 						.field{
 							padding-left: 5px;
+						}
+						.button{
+							font-size: 22px;
 						}
 					}
 				}
@@ -431,18 +429,26 @@
 			max-width: 780px;
 			margin: 0 auto;
 			padding: 60px 50px;
-			border-radius: 10px;
-			background-color: #fff;
-			box-shadow: $base-box-shadow;
+			@include media-max(768){
+				padding: 50px 15px;
+			}
 			ul{
 				li{
 					margin-bottom: 50px;
 					&:last-child{
 						margin-bottom: 0;
 					}
+					@include media-max(768){
+						margin-bottom: 20px;
+					}
 					p{
 						font-size: 14px;
 						line-height: 1.5;
+					}
+					.button{
+						@include media-max(768){
+							margin: 10px 0;
+						}
 					}
 				}
 			}
@@ -456,12 +462,8 @@
 
 			&__options{
 				max-width: 300px;
-				margin: 0 auto 70px auto;
 				padding: 8px;
-				border-radius: 10px;
-				overflow: hidden;
-				background-color: #fff;
-				box-shadow: $base-box-shadow;
+				margin: 0 auto 70px auto;
 				.button{
 					height: 52px;
 					color: #2A2A2A;
@@ -475,15 +477,10 @@
 
 			&__small,
 			&__big{
-				width: 100%;
-				border-radius: 10px;
-				overflow: hidden;
-				background-color: #fff;
-				box-shadow: $base-box-shadow;
 				padding: 50px;
 				@include media-max(768){
 					margin-bottom: 20px;
-					padding: 20px 10px;
+					padding: 20px 15px;
 				}
 				p{
 					color: $base-font-color;
@@ -549,9 +546,6 @@
 
 .dashboard{
 	max-width: 100%;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: $base-box-shadow;
 	&--empty{
 		padding: 125px 30px;
 		@include media-max(768){
@@ -672,10 +666,16 @@
 		margin: 0 auto;
 		max-width: 780px;
 		padding: 55px;
+		@include media-max(768){
+			padding: 50px 15px;
+		}
 		ul{
 			margin-top: 20px;
 			li{
 				margin-bottom: 50px;
+				@include media-max(768){
+					margin-bottom: 20px;
+				}
 			}
 		}
 		p{
@@ -688,10 +688,16 @@
 	&--add{
 		position: relative;
 		padding: 50px;
-		max-width: 1170px;
 		margin: 0 auto;
+		max-width: 1170px;
+		@include media-max(768){
+			padding: 50px 15px;
+		}
 		[class^="col-"]{
 			margin-bottom: 50px;
+			@include media-max(768){
+				margin-bottom: 20px;
+			}
 		}
 		.close{
 			position: absolute;

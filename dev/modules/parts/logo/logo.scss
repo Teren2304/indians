@@ -2,4 +2,8 @@
 	display: block;
 	width: 153px;
 	height: 56px;
+	@include media-max(768){
+		width: 130px;
+		height: 45px;
+	}
 }
