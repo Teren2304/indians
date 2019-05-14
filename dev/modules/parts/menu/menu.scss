@@ -5,7 +5,7 @@ $menu:(
 );
 
 .menu{
-	@include media-max(767){
+	@include media-max(768){
 		position: absolute;
 		top: 100%;
 		left: 0;
@@ -39,11 +39,17 @@ $menu:(
 		&:last-child{
 			margin-right: 0;
 			margin-left: 40px;
-			@include media-max(767){
+			@include media-max(992){
+				margin-left: 20px;
+			}
+			@include media-max(768){
 				margin-left: 0;
 			}
 		}
-		@include media-max(767){
+		@include media-max(992){
+			margin: 0 10px;
+		}
+		@include media-max(768){
 			margin: 0;
 		}
 		.link{

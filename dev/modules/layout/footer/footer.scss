@@ -1,5 +1,26 @@
 .footer{
 	overflow: hidden;
+	position: relative;
+	padding-top: 100px;
+	margin-top: -100px;
+	&:before{
+		content: '';
+		position: absolute;	
+		top: 0;
+		left: 0;
+		width: 800px;
+		height: 800px;
+		background-position: 50%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url('../img/service/bg-left.png');
+		transform: translateX(-20%) rotateZ(100deg);
+		z-index: -1;
+		@include media-max(768){
+			top: 100%;
+			transform: translate(-20%, -100%) rotateZ(100deg);
+		}
+	}
 	&__info{
 		padding: 75px 0 50px 0;
 		.logo{

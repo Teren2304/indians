@@ -5,7 +5,7 @@ block content
 		.triangle2
 		.ellipse1
 		.ellipse2
-		header.header
+		header.header.header--right
 			+nav.nav--login
 			section.section.section--header
 				.container-fluid
@@ -19,7 +19,7 @@ block content
 						.bg-font.dashboard.dashboard--not-empty.text-center
 							.flex.align-middle.align-justify.flex-wrap
 								h6.h6 Your Documents
-								+button('link').button--primary + Add Docoments
+								+button('link')(href="dashboard-add.html").button--primary + Add Docoments
 							.table
 								.table__row.table__row--service
 									.table__cell
@@ -56,7 +56,7 @@ block content
 									.table__cell
 										p.font(data="Last Update") 25th April
 									.table__cell
-										.edit
-										.details
-										.delete
+										a(href="dashboard-add.html").edit(title="Edit")
+										a(href="dashboard-details.html").details(title="Details")
+										a(href="#").delete(title="Delete")
 		+footer

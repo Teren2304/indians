@@ -5,20 +5,22 @@ block content
 		.triangle2
 		.ellipse1
 		.ellipse2
-		header.header
+		header.header.header--left
 			+nav
 			section.section.section--right
 				.container-fluid
 					.container
 						.row.align-middle.align-justify
-							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+							.col-12.col-sm-12.col-md-12.col-lg-12.col-xl-5
 								.text-left
 									h2.h1 Have a Happy & Secured Life
 									p.font Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
-									.points.points--left
 									+button('link')(href="#").button--primary Get Started
-							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4
-								img(src="./img/right.png", alt="")
+							.col-12.col-sm-12.col-md-12.col-lg-12.col-xl-7
+								.circle.circle--right.circle--video
+									img(src="./img/example.png", alt="").circle__img
+									.play
+						.points.points--left
 		.main
 			section.section.section--steps
 				.container-fluid
@@ -46,11 +48,12 @@ block content
 			section.section.section--left.section--about
 				.container-fluid
 					.container
+						.points.points--right
 						.row.align-center-middle
-							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-4
-								img(src="./img/left.png", alt="")
-							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-7
-								.points.points--right
+							.col-12.col-lg-7.col-xl-7
+								.circle.circle--left
+									img(src="./img/example.png", alt="").circle__img
+							.col-12.col-lg-5.col-xl-5
 								.text-left
 									h2.h1 About Us
 									p.font Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
@@ -64,14 +67,15 @@ block content
 							p.font Completely underwhelm professional niches and 24/365 relationships. Holisticly restore equity invested total linkage through resource
 						img(src="./img/service/quote.svg", alt="")
 						+slider
+						.points.points--left
 			section.section.section--feedback
 				.container-fluid
 					.container
 						.row
-							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+							.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
 								h3.h3.h3--white Do you have any Query?
 								p.font.font--lg.font--white Write us your queries, we’ll respond you asap!
-							.col-12.col-sm-12.col-md-4.col-lg-4.col-xl-6
+							.col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
 								.form.flex.align-middle
 									input(type="email", placeholder="Email Address").field.form__field
 									button.button.form__button Contact

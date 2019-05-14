@@ -9,7 +9,6 @@ $('.slider').slick({
 		{
 			breakpoint: 768,
 			settings: {
-				centerMode: true,
 				slidesToShow: 1
 			}
 		}
